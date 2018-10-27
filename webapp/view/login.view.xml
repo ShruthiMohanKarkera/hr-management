@@ -1,0 +1,22 @@
+<mvc:View controllerName="HrAndEmp.HR_Management.controller.login" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:l="sap.m.layout" >
+	<App id="idAppControl">
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					
+					<f:SimpleForm editable="true" class="sapUiTinyMarginBegin " width="70%" labelMinWidth="50%" >
+						<Label text="Emp Id" />
+						<Input type="Number" placeholder="Enter Emp Id" width="80%" id="Id" liveChange="checkValidation" required="true"/>
+						
+						<Label text="Password" />
+						<Input value="" type="Password" placeholder="Enter Password" width="80%" id="Password" required="true"/>
+						<Label/>
+						<Button text="Submit" width="50%" class="sapUiLargeMarginBegin sapUiLargeMarginBottom" id="Button" press="onPress" />
+					</f:SimpleForm>
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
